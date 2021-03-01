@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "994bc55740667baaac8ecb72bdec49b8",
+    "content-hash": "c4cca9433270d8588a83e51882f8083e",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -2609,6 +2609,72 @@
                 }
             ],
             "time": "2020-08-18T17:17:46+00:00"
+        },
+        {
+            "name": "samuelbie/mpesa",
+            "version": "1.4.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samuel-Bie/mpesa-laravel-sdk.git",
+                "reference": "db1ecd3c27e238027fc117c2dbf43886b66dce30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samuel-Bie/mpesa-laravel-sdk/zipball/db1ecd3c27e238027fc117c2dbf43886b66dce30",
+                "reference": "db1ecd3c27e238027fc117c2dbf43886b66dce30",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "guzzlehttp/guzzle": "^5.3|^6.2|^7.0",
+                "php": "^5.5 || ^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Samuelbie\\Mpesa\\MpesaServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Samuelbie\\Mpesa\\": "src"
+                },
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Bie",
+                    "email": "samuelbie@outlook.com",
+                    "homepage": "https://samuel-bie.github.io",
+                    "role": "Software Engineer"
+                }
+            ],
+            "description": "This is an interface to communicate with Mpesa Open API Mozambique",
+            "homepage": "https://github.com/Samuel-Bie/msisdn-mz-php.git",
+            "keywords": [
+                "B2C",
+                "Mpesa SDK",
+                "Reversal",
+                "b2b",
+                "c2b",
+                "laravel",
+                "m-pesa",
+                "mpesa",
+                "open-api",
+                "php",
+                "query"
+            ],
+            "support": {
+                "issues": "https://github.com/Samuel-Bie/mpesa-laravel-sdk/issues",
+                "source": "https://github.com/Samuel-Bie/mpesa-laravel-sdk/tree/1.4.5"
+            },
+            "time": "2021-03-01T06:16:46+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

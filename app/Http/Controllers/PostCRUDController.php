@@ -40,8 +40,10 @@ class PostCRUDController extends Controller
         $request->validate([
             'titulo' => 'required',
             'imagem' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
-            'musica'=>'required|mimes|mpga,wav',
+            'musica'=>'required',
             'descricao' => 'required',
+            
+
             
         ]);
         $path = $request->file('imagem')->store('public/imagens');
@@ -51,9 +53,13 @@ class PostCRUDController extends Controller
         $post->descricao = $request->descricao;
         $post->imagem = $path;
         $post->musica = $path2;
-        
-      
+        $post->filters()->clip(FFMpeg\Coordinate\TimeCode::fromSeconds(30), FFMpeg\Coordinate\TimeCode::fromSeconds(15));
         $post->save();
+
+
+
+
+
      
         return redirect()->route('posts.index')
                         ->with('success','Post has been created successfully.');

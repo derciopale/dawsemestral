@@ -59,3 +59,6 @@ $kernel->terminate($request, $response);
 // \falahati\PHPMP3\MpegAudio::fromFile("storage/public/musicas/teste.mp3")->trim(10, 30)->saveFile("new.mp3");
 // \falahati\PHPMP3\MpegAudio::fromFile("old.mp3")->append(\falahati\PHPMP3\MpegAudio::fromData(base64_decode("/**BASE64-DATA**/")))->saveFile("new.mp3");
 // echo \falahati\PHPMP3\MpegAudio::fromFile("old.mp3")->getTotalDuration();
+
+
+
